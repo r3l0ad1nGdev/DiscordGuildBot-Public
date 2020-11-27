@@ -1,9 +1,11 @@
-﻿namespace GuildBot
+﻿using System;
+
+namespace GuildBot
 {
     internal class BotEnvironment
     {
-        //Channel where message to join guilds appears
-        internal const ulong JoinChannelId = 771453424361013248;
+        //Channel where message to join guilds appears, MUST BE CHANGED
+        internal ulong JoinChannelId = 0;        
     }
 
     internal class Resources

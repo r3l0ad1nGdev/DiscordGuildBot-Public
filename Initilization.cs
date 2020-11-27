@@ -19,7 +19,7 @@ namespace GuildBot
             var discord = new CustomDiscordClient(new DiscordConfiguration
             {
                 //Add bot token here
-                Token = "",
+                Token = "NzYzNzUzNDY5MjQwNTQxMjE1.X38S2A.vq1DR2_5UhZM2A5Gid__MZKH3H0",
                 TokenType = TokenType.Bot,
                 UseInternalLogHandler = true,
                 LogLevel = LogLevel.Debug
@@ -28,10 +28,15 @@ namespace GuildBot
 
             discord.Ready += async data =>
             {
+                var botEnv = new BotEnvironment();
 
                 if (args.Length != 1)
                 {
                     Console.Error.WriteLine("ERROR: You must load a bot config file in order to process reactions.");
+                }
+                if (botEnv.JoinChannelId == 0)
+                {
+                    Console.Error.WriteLine("Please set the Join Channel ID (where the join message is sent) in BotEnvironment.cs");
                 }
                 else
                 {

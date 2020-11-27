@@ -1,8 +1,7 @@
 {
   "profiles": {
     "GuildBot": {
-      "commandName": "Project",
-      "commandLineArgs": "C:\\Brad\\VMW\\Bots\\C#\\VMW-GuildBot\\SampleConfigCommandAttachment.json"
+      "commandName": "Project"
     }
   }
 }

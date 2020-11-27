@@ -20,7 +20,8 @@ namespace GuildBot
         /// <returns></returns>
         public static async Task<ulong> CreateJoinMessage(this DiscordClient discord, BotConfig config)
         {
-            var channel = await discord.GetChannelAsync(BotEnvironment.JoinChannelId);
+            var botEnv = new BotEnvironment();
+            var channel = await discord.GetChannelAsync(botEnv.JoinChannelId);
             var messages = await channel.GetMessagesAsync();
             if (messages != null && messages.Count > 0)
             {
