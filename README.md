@@ -6,3 +6,5 @@ This bot acts as a way to manage and create questionairs that people can answer 
 The Bot runs on the D-Sharp Plus library which can be found here:https://github.com/DSharpPlus/DSharpPlus
 
 For any questions, feel free to reach out to me on discord at: r3l0ad1nG#6118
+
+NOT SUITABLE FOR DEPLOYMENT ATM
